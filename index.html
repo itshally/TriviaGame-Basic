@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Comptible" content="ie=edge">
+    <meta name="author" content="HB">
+    <title>Trivia Game - Basic</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- own css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- start page -->
+    <div class="container start-page">
+        <h1>Trivia Game</h1>
+        <button id="start-btn">Start Game</button>
+    </div>
+
+    <!-- main content -->
+    <div class="container game-page" id="game-container">
+        <!-- timer -->
+        <label id="timer"><span id="timer-countdown"></span></label>
+
+        <!-- questionnaire container -->
+        <div class="container questionnaire-container">
+            
+            <!-- question 1 -->
+            <div id="q0">
+                <p id="question-0" class="questions"></p>
+                <ul id="options-0"></ul>
+            </div>
+
+            <!-- question 2 -->
+            <div id="q1">
+                <p id="question-1" class="questions"></p>
+                <ul id="options-1"></ul>
+            </div>
+
+            <!-- question 3 -->
+            <div id="q2">
+                <p id="question-2" class="questions"></p>
+                <ul id="options-2"></ul>
+            </div>
+
+            <!-- question 4 -->
+            <div id="q3">
+                <p id="question-3" class="questions"></p>
+                <ul id="options-3"></ul>
+            </div>
+
+            <!-- question 5 -->
+            <div id="q4">
+                <p id="question-4" class="questions"></p>
+                <ul id="options-4"></ul>
+            </div>
+
+            <!-- question 5 -->
+            <div id="q5">
+                <p id="question-5" class="questions"></p>
+                <ul id="options-5"></ul>
+            </div>
+        </div>
+        <button id="finish-btn">Finish</button>
+    </div>
+
+    <!-- result page -->
+    <div class="container result-page">
+        <h2>Time's Up!</h2>
+        <p>Correct Answers: <span id="correct"></span></p>
+        <p>Incorrect Answers: <span id="incorrect"></span></p>
+        <p>Unanswered: <span id="unanswered"></span></p>
+    </div>
+    
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- own js -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
