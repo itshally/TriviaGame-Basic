@@ -1,0 +1,135 @@
+html, body{
+    background-color: #FFFFFF;
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+}
+
+/* start page */
+.start-page{
+    text-align: center;
+    padding: 5%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000000;
+    background-color: #FFF0F5;
+}
+.start-page h1{
+    font-size: 5em;
+    letter-spacing: 2px;
+    padding: 2%;
+}
+#start-btn, #finish-btn{
+    padding: 2%;
+    margin: 2%;
+    width: 200px;
+    border: 1px solid #DB7093;
+    border-radius: 25px;
+    background-color: #FFC0CB;
+    color: #000000;
+    font-weight: bold;
+    outline: none;
+}
+#start-btn:hover, #finish-btn:hover{
+    color: #FFFFFF;
+    background-color: #DB7093;
+    text-shadow: 0px 0px 5px #000000;
+}
+
+/* game page */
+.game-page{
+    width: 85%;
+    height: auto;
+    padding: 3%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    font-size: 1.2em;
+    background-color: #FFF0F5;
+}
+#timer{
+    color: #FFC0CB;
+    font-size: 5em;
+    text-align: center;
+    letter-spacing: 10px;
+    width: 100%;
+}
+.questions p{
+    background-color: #FFFFFF;
+    padding: 15px;
+    color: #000000;
+    border-radius: 5px;
+}
+
+/* -------------------from this line------------------- */
+/* Credits for the radio buttons: http://www.tipue.com/blog/radio-checkbox/ */
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 1px solid #000000;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font: 15px/1.7 'Open Sans', sans-serif;
+     color: #333;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     cursor: pointer;
+     margin-right: 25px;
+} 
+/* -------------------until here------------------- */
+#finish-btn{
+    display: block;
+    margin: auto;
+}
+
+/* result page */
+.result-page{
+    border: 2px solid #000000;
+    background-color: #FFF0F5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+    font-size: 1.2em;
+}
+.result-page h2{
+    font-size: 3em;
+    padding: 2%;
+}
